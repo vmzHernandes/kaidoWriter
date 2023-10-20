@@ -1,0 +1,76 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    /* border: 1px solid red; */
+    background-color: #161925;
+    color: #9CBCD3;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+}
+section {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+input[type="file"] {
+    display: none;
+}
+
+.imagemUploadLabel {
+    background-color: none;
+    cursor: pointer;
+    border-bottom: 1px solid #9CBCD3;
+    padding-bottom: 5px;
+    font-size: 2rem;
+}
+#imagemUpload, #adicionaTexto {
+    width: 20%;
+    cursor: pointer;
+}
+
+#texto {
+    width: 30%;
+    border: none;
+    border-bottom: 1px solid #9CBCD3;
+    padding-bottom: 5px;
+    font-size: 2rem;
+}
+#texto::placeholder {
+    text-align: center; 
+}
+
+#adicionaTexto {
+    border: none;
+    border-bottom: 1px solid #9CBCD3;
+    padding-bottom: 5px;
+    font-size: 2rem;
+}
+#apagaTexto {
+    width: 20%;
+    cursor: pointer;
+    border: none;
+    border-bottom: 1px solid #9CBCD3;
+    padding-bottom: 5px;
+    font-size: 2rem;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+main button {
+    cursor: pointer;
+    width: 30%;
+    border: none;
+    border-bottom: 1px solid #9CBCD3;
+    padding-bottom: 5px;
+    font-size: 2rem;
+}
+
+button:hover, label:hover, #texto:hover, h1:hover {
+    transform: translateY(-3px);
+    transition: all .5s ease;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <h1>Kaido Writer</h1>
+    <section>
+        <label for="imagemUpload" class="imagemUploadLabel">
+            <i class=""></i> Procurar imagem
+        </label>
+        <input type="file" id="imagemUpload" accept="image/*">
+        <input placeholder="Digite o texto" id="texto">
+        <button id="adicionaTexto">Escrever!</button>
+        <button id="apagaTexto">Apagar</button>
+    </section>
+    <main>
+        <canvas id="canvas"></canvas>
+        <button id="botaoDownload">Baixar</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
