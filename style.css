@@ -1,76 +1,78 @@
-* {
-    font-family: 'Montserrat', sans-serif;
-    /* border: 1px solid red; */
-    background-color: #161925;
-    color: #9CBCD3;
+body {
+    font-family: "Quicksand", sans-serif;
+    color: #c4c4c4;
+    background-color: #1d1d1d;
+    max-width: 90%;
+    margin: 0 auto;
+    text-transform: uppercase;
 }
-h1 {
-    display: flex;
-    justify-content: center;
+/* Header */
+
+nav {
+    border-radius: 0.9rem;
+    background-color: #0c0c0c;
+    margin: 2rem 0;
+    font-size: 1.25rem;
 }
-section {
-    padding: 25px;
+
+nav ul {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding: 2rem;
+    list-style-type: none;
 }
+
+nav a {
+    text-decoration: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #c4c4c4;
+    text-transform: uppercase;
+}
+
+/* Main */
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0.9rem;
+    background-color: #0c0c0c;
+    padding: 1rem;
+}
+
+.main-btn {
+    font-size: 1.5rem;
+    background-color: none;
+    cursor: pointer;
+}
+
+input {
+    color: #c4c4c4;
+    font-size: 1.5rem;
+}
+
 input[type="file"] {
     display: none;
 }
 
-.imagemUploadLabel {
-    background-color: none;
-    cursor: pointer;
-    border-bottom: 1px solid #9CBCD3;
-    padding-bottom: 5px;
-    font-size: 2rem;
-}
-#imagemUpload, #adicionaTexto {
-    width: 20%;
-    cursor: pointer;
+#texto {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #c4c4c4;
 }
 
-#texto {
-    width: 30%;
-    border: none;
-    border-bottom: 1px solid #9CBCD3;
-    padding-bottom: 5px;
-    font-size: 2rem;
-}
 #texto::placeholder {
     text-align: center; 
-}
-
-#adicionaTexto {
-    border: none;
-    border-bottom: 1px solid #9CBCD3;
-    padding-bottom: 5px;
-    font-size: 2rem;
-}
-#apagaTexto {
-    width: 20%;
-    cursor: pointer;
-    border: none;
-    border-bottom: 1px solid #9CBCD3;
-    padding-bottom: 5px;
-    font-size: 2rem;
-}
-
-main {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-main button {
-    cursor: pointer;
-    width: 30%;
-    border: none;
-    border-bottom: 1px solid #9CBCD3;
-    padding-bottom: 5px;
-    font-size: 2rem;
-}
-
-button:hover, label:hover, #texto:hover, h1:hover {
-    transform: translateY(-3px);
-    transition: all .5s ease;
+    color: #c4c4c4;
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }

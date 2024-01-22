@@ -12,8 +12,8 @@ imgUpload.addEventListener("change", function(e) {
     img.src = URL.createObjectURL(e.target.files[0]);
     imgOriginalURL = URL.createObjectURL(e.target.files[0]);
     img.onload = function() {
-        canvas.width = 1000;
-        canvas.height = 750;
+        canvas.width = img.width;
+        canvas.height = img.height;
         imgContexto.drawImage(img, 0, 0, canvas.width, canvas.height);
     }
 })
