@@ -23,9 +23,9 @@ let botaoAdicionaTexto = document.getElementById("adicionaTexto");
 botaoAdicionaTexto.addEventListener("click", function() {
     let texto = document.getElementById("texto").value;
     if (texto) {
-        imgContexto.font = "64px Montserrat";
+        imgContexto.font = "256px Montserrat";
         imgContexto.fillStyle = "black";
-        imgContexto.fillText(texto, 100, 100);
+        imgContexto.fillText(texto, 300, 400);
     }
 })
 
