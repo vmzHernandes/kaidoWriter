@@ -25,7 +25,7 @@ botaoAdicionaTexto.addEventListener("click", function() {
     if (texto) {
         imgContexto.font = "256px Montserrat";
         imgContexto.fillStyle = "black";
-        imgContexto.fillText(texto, 300, 400);
+        imgContexto.fillText(texto, img.height*0.1, img.width*0.1);
     }
 })
 
